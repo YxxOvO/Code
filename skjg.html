@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="subindex.css"/>
+    <script type="text/javascript" src="subindex.js"></script>
+    <title>图书馆网站内页</title>
+</head>
+<body>
+    <div id="container">
+        <div id="logo"></div>
+        <div id="navigator">
+            <ul>
+                <li><a href="#">学校主页</a></li>
+                <li><a href="#">馆藏数目检索</a></li>
+                <li><a href="#">新书通报</a></li>
+                <li><a href="#">书刊荐购</a></li>
+                <li><a href="#">学术信息动态</a></li>
+                <li><a href="#">新生专栏</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">馆长信箱</a></li>
+            </ul>
+        </div>
+        <div id="content">
+        <div id="left">
+            <ul>
+            <li>资源检索</li>
+                <li class="list">
+                <a href="#">中文</a>
+                    <a href="#">外文</a>
+                    <a href="#">试用</a>
+                </li>
+                <li>读者服务</li>
+                <li class="list">
+                <a href="#">查询</a>
+                    <a href="#">续借</a>
+                    <a href="#">预约</a>
+                </li>
+                <li>入馆指南</li>
+                <li class="list">
+                <a href="#">概况</a>
+                    <a href="#">须知</a>
+                    <a href="#">开放时间</a>
+                </li>
+                <li>信息服务</li>
+                <li class="list">
+                <a href="#" style="width: 70px">信息咨询</a>
+                    <a href="#" style="width: 70px">文献传递</a>
+                </li>
+                <li>网络导航</li>
+                <li class="list">
+                <a href="#" style="width: 70px">网上图书馆</a>
+                    <a href="#" style="width: 70px">馆员天地</a>
+                </li>
+            </ul>
+            </div>
+            <div id="right">
+                <div id="righttile">书刊荐购单</div>
+                <form action="http://www.baidu.com" method="post" id="booksuggetion" onSubmit="return toCheck();">
+                <table width="80%" cellpadding="0" cellspacing="0">
+                    <tr>
+                    <td>书刊提名：*</td>
+                        <td class="tdtwo">
+                        <input type="text" placeholder="书刊名称" name="bookname">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>作者/责任者：*</td>
+                        <td class="tdtwo">
+                        <input type="text" placeholder="作者" name="authoname">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>出版社：*</td>
+                        <td class="tdtwo">
+                        <input type="text" placeholder="出版社" name="publisher">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>出版日期：*</td>
+                        <td class="tdtwo">
+                        <input type="date" name="publishdate" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>ISBN/ISSN：*</td>
+                        <td class="tdtwo">
+                        <input type="text" placeholder="ISBN/ISSN" id="ISBN">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>类别：</td>
+                        <td class="tdthree">
+                        <input type="radio" name="type" value="book">图书
+                            <input type="radio" name="type" value="journal">期刊
+                            <input type="radio" name="type" value="newspaper">报纸
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>推荐者姓名：*</td>
+                        <td class="tdtwo">
+                        <input type="text" placeholder="推荐者姓名" name="recommnames">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>Email：*</td>
+                        <td class="tdtwo">
+                        <input type="email" placeholder="电子邮箱地址" name="email">
+                        </td>
+                    </tr>
+                    <tr>
+                    <td>推荐原因：*</td>
+                        <td class="tdtwo">
+                            <textarea placeholder="推荐原因" name="reson"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                    <td class="tdfour" colspan="2">
+                        <input type="submit" value="提交" id="submit">
+                        <input type="reset" value="重置" id="reset">
+                        </td>
+                    </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div id="copyright">
+            版权所有：新疆理工学院 技术支持：网络管理中心 建议使用IE7.0以上浏览器 1024*768以上分辨率
+        </div>
+    </div>
+</body>
+</html>
